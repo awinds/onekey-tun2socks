@@ -4,8 +4,8 @@ set -e
 #================================================================================
 # 常量和全局变量
 #================================================================================
-VERSION="1.1.2"
-SCRIPT_URL="https://raw.githubusercontent.com/hkfires/onekey-tun2socks/main/onekey-tun2socks.sh"
+VERSION="1.1.3"
+SCRIPT_URL="https://raw.githubusercontent.com/awinds/onekey-tun2socks/main/onekey-tun2socks.sh"
 
 # 颜色定义
 RED='\033[0;31m'
@@ -260,11 +260,14 @@ get_custom_server_config() {
 
 select_alice_port() {
     local options=(
-        "新加坡机房IP:10001"
-        "香港家宽 (已弃用):20000"
-        "台湾家宽:30000"
-        "越南家宽 (已弃用):40000"
-        "日本家宽:50000"
+        "台湾家宽:10001"
+        "台湾家宽:10002"
+        "台湾家宽:10003"
+        "台湾家宽:10004"
+        "台湾家宽:10005"
+        "台湾家宽:10006"
+        "台湾家宽:10007"
+        "台湾家宽:10008"
     )
     echo >&2
     echo -e "${YELLOW}=========================================================${NC}" >&2
